@@ -102,7 +102,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<div id="store-area" hidden><tw-storydata name="L&#x27;Ermite" startnode="12" creator="Twine" creator-version="2.1.3" ifid="FA73C1F2-107F-47E1-A3EB-122D59FB205A" format="SugarCube" format-version="2.18.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Coustard|IM+Fell+DW+Pica+SC|IM+Fell+Double+Pica+SC|Jacques+Francois|Radley|Rokkitt&subset=latin-ext');
+	<div id="store-area" hidden><tw-storydata name="L&#x27;Ermite" startnode="1" creator="Twine" creator-version="2.1.3" ifid="FA73C1F2-107F-47E1-A3EB-122D59FB205A" format="SugarCube" format-version="2.18.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Coustard|IM+Fell+DW+Pica+SC|IM+Fell+Double+Pica+SC|Jacques+Francois|Radley|Rokkitt&subset=latin-ext');
 
 /* Fonts : 
 >serif
@@ -192,7 +192,9 @@ blockquote{
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -202,11 +204,15 @@ blockquote{
 
 Pendant que vous serez sur une planète, d&#x27;autres évènements se dérouleront sur les autres. Votre expérience de jeu sera donc dépendante du trajet que vous choisirez (l&#x27;ordre dans lequel vous visitez les planètes).
 
-Quel est votre nom ? 
+&lt;span id=&quot;prompt&quot;&gt;Quel est votre nom ? 
 
-&lt;&lt;textbox &quot;$nom_joueur&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;textbox &quot;$nom_joueur&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
-[[Suivant]]</tw-passagedata><tw-passagedata pid="2" name="StoryAuthor" tags="" position="165,272">de Bobby &amp; Jou</tw-passagedata><tw-passagedata pid="3" name="StoryBanner" tags="" position="166,54"></tw-passagedata><tw-passagedata pid="4" name="StoryCaption" tags="" position="165,379">(C&#x27;est l&#x27;aventure d&#x27;un homme qui n&#x27;aimait pas les aventures.)</tw-passagedata><tw-passagedata pid="5" name="StoryInit" tags="" position="408,199">/*Initialiser les variables ici*/
+&lt;&lt;linkreplace &quot;Valider&quot;&gt;&gt;Bonjour, $nom_joueur !
+&lt;&lt;remove &quot;#prompt&quot;&gt;&gt;
+[[Suivant]]
+&lt;&lt;/linkreplace&gt;&gt;
+</tw-passagedata><tw-passagedata pid="2" name="StoryAuthor" tags="" position="165,272">de Bobby &amp; Jou</tw-passagedata><tw-passagedata pid="3" name="StoryBanner" tags="" position="166,54"></tw-passagedata><tw-passagedata pid="4" name="StoryCaption" tags="" position="165,379">(C&#x27;est l&#x27;aventure d&#x27;un homme qui n&#x27;aimait pas les aventures.)</tw-passagedata><tw-passagedata pid="5" name="StoryInit" tags="" position="408,199">/*Initialiser les variables ici*/
 
 &lt;&lt;set $hp to 100&gt;&gt;
 &lt;&lt;set $hpmax to 100&gt;&gt;
